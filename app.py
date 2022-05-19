@@ -1,8 +1,7 @@
 import requests
 import json
 import os
-from flask import Flask, render_template,abort
-app = Flask(__name__)	
+
 URL_BASE="https://phonevalidation.abstractapi.com/v1/"
 
 #Antes de poder importar key tenemos que introducir en la terminal:
