@@ -1,6 +1,8 @@
 #No funciona
+import imp
 import requests
 import json
+import os
 
 URL_BASE="https://pokeapi.co/api/v2/"
 

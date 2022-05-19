@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 URL_BASE="https://pokeapi.co/api/v2/pokemon-form/"
 

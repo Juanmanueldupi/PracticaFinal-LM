@@ -1,7 +1,7 @@
 import requests
 import json
-from flask import Flask, render_template,abort
-app = Flask(__name__)
+import os
+
 URL_BASE="https://pokeapi.co/api/v2/"
 r=requests.get(URL_BASE+'pokemon/')
 if r.status_code == 200:
