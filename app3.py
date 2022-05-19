@@ -1,7 +1,6 @@
 import requests
 import json
-from flask import Flask, render_template,abort
-app = Flask(__name__)
+
 URL_BASE="https://pokeapi.co/api/v2/pokemon-form/"
 
 pokemon=input("Introduce el numero de un pokemon: ")
