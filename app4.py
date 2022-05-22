@@ -7,6 +7,8 @@ r=requests.get(URL_BASE+'pokemon/')
 if r.status_code == 200:
     doc=r.json()
     print ("Listado de Pokemons")
-    print (doc)
+    for pokemon in doc.get("results"):
+        print (pokemon.get("name"))
 else:
-	print("Error en la API")
+    print ("Error en la API")
+        
