@@ -16,7 +16,16 @@ r=requests.get(URL_BASE,params=payload)
 
 if r.status_code == 200:
     doc=r.json()
-    print (doc)
+    print("Telefono",doc.get("phone"))
+    print("valido",doc.get("valid"))
+    print("Formato Internacional",doc.get("format").get("international"))
+    print("Formato Local",doc.get("format").get("local"))
+    print("Iniciales del Pais",doc.get("country").get("code"))
+    print("Pais",doc.get("country").get("name"))
+    print("Prefijo",doc.get("country").get("prefix"))
+    print("Localizado en:",doc.get("location"))
+    print("Tipo",doc.get("type"))
+    print ("Ultima Operadora conocida",doc.get("carrier"))
 else:
     print ("Error, el telefono no es valido")
 
